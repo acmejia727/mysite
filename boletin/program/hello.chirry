@@ -1,0 +1,14 @@
+n -> 5:
+p -> 1:
+x -> 1:
+y -> 2:
+AIJUE n > 0 PORKAJA
+  p -> p * n:
+  n -> n - 1
+ASTAQUI:
+
+ESOVA x = 1 COMOJUE
+  y -> 2
+SINOVA
+  y -> 3
+ASTAQUI
