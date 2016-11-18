@@ -62,7 +62,7 @@ def lex(characters, token_exprs):
                 break
         if not match:
             error_lex= 'Caracter Ilegal, suave nano que tu no sabes escribir: =  %s' % characters[pos]
-            error_sw=1;
+            error_sw=1
             print cont_line
             return tokens
             sys.exit(1)

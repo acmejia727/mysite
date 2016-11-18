@@ -5,6 +5,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Patrick+Hand|Ubuntu+Mono" rel="stylesheet">
+
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Chirry ++</title>
 
@@ -20,13 +22,42 @@
     <![endif]-->
   </head>
   <body>
+<div id="titulo">
+    <div class="container">
+        <div class="row">
+          <div class="col-xs-4">
+            <img src="{% static 'img/causalogo.png' %}" alt="">
+          </div>
+            <div class="col-xs-6">
+                <h1>Interprete python de Chirry ++ </h1>
+              <p>Version Web</p>
+            </div>
+        </div>
+    </div>
+  </div>
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <p><h1><span class="glyphicon glyphicon-console" aria-hidden="true"></span></h1>
+      Bienvenidos a Chirry ++, el lenguaje de programación mas chirry y pecueco de la historia.
+      Usa este interprete para que pueda validar la sintaxy de esta **%$#$ de programa </p>
+    </div>
+  </div>
+</div>
 
   <div class="container">
     {% block section %}
 
     {% endblock section %}
   </div>
-
+<div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <b>Desarrollado por:</b>
+                <p>Andres Mejia - Jeferson Vergara - Javier Mejia - Jhoan Machado</p>
+            </div>
+        </div>
+    </div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->

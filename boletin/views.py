@@ -6,7 +6,8 @@ from program.chirry import *
 from program.chirry_parser import *
 from program.chirry_lexer import *
 # Create your views here.
-error_lex='1'
+error_lex=1
+
 def inicio(request):
     global error_lex
     form = RegForm(request.POST or None )
@@ -18,14 +19,15 @@ def inicio(request):
         obj = Codigo.objects.create(codigo=code, nombre=name)
 
     x=str(code)
-    Registro = Codigo.objects.all()[0:4]
+    Registro = Codigo.objects.order_by('-timestamp')[:5]
     context = {
         'codigo':'SU CODIGO:',
         'el_form': form,
         'log': main_chirry(x),
         'texto':code,
         'registro':Registro,
+        'error_flag': error_parser(),
     }
 
-    print(sys.version)
+
     return render(request,'inicio.html',context)
