@@ -9,6 +9,7 @@ from program.chirry_lexer import *
 error_lex=1
 
 def inicio(request):
+    global variable
     global error_lex
     form = RegForm(request.POST or None )
     code=''
@@ -27,6 +28,7 @@ def inicio(request):
         'texto':code,
         'registro':Registro,
         'error_flag': error_parser(),
+        'variable':variables(),
     }
 
 
