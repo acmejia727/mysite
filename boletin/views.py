@@ -22,6 +22,7 @@ def inicio(request):
     x=str(code)
     Registro = Codigo.objects.order_by('-timestamp')[:5]
     context = {
+        'holamundo':'hola Causa',
         'codigo':'SU CODIGO:',
         'el_form': form,
         'log': main_chirry(x),
